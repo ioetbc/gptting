@@ -7,7 +7,7 @@ import {StackScreenProps} from "@react-navigation/stack";
 
 const auth = getAuth();
 
-const SignUpScreen: React.FC<StackScreenProps<any>> = ({navigation}) => {
+export const SignUp: React.FC<StackScreenProps<any>> = ({navigation}) => {
   const [value, setValue] = React.useState({
     email: "",
     password: "",
@@ -91,5 +91,3 @@ const styles = StyleSheet.create({
     backgroundColor: "#D54826FF",
   },
 });
-
-export default SignUpScreen;

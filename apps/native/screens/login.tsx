@@ -6,7 +6,7 @@ import {getAuth, signInWithEmailAndPassword} from "firebase/auth";
 
 const auth = getAuth();
 
-const SignInScreen = () => {
+export const Login = () => {
   const [value, setValue] = React.useState({
     email: "",
     password: "",
@@ -91,4 +91,3 @@ const styles = StyleSheet.create({
     backgroundColor: "#D54826FF",
   },
 });
-export default SignInScreen;
